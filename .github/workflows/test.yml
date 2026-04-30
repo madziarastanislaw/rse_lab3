@@ -11,3 +11,6 @@ jobs:
       - run: pip install nbformat nbclient ipykernel numpy 
       - run: sudo apt-get install texlive-luatex texlive-latex-extra
       - run: quarto render Untitled0.ipynb --to pdf --execute 
+      - uses: actions/upload-artifact@v7
+        with:
+          path: thesis.pdf
