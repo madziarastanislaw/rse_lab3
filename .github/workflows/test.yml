@@ -9,4 +9,5 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2 
       - uses: actions/checkout@v3
       - run: pip install nbformat nbclient ipykernel numpy 
+      - run: sudo apt-get install texlive-luatex texlive-latex-extra
       - run: quarto render Untitled0.ipynb --to pdf --execute 
