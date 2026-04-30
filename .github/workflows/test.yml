@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - uses: quarto-dev/quarto-actions/setup@v2 
+      - uses: actions/checkout@v3
       - run: quarto render Untitled0.ipynb --to pdf --execute 
